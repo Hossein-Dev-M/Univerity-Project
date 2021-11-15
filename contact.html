@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Victory Restaurant</title>
+</head>
+
+<body>
+    <!-- start header -->
+    <section class="header">
+        <div class="container">
+            <nav>
+                <h1 class="header-title">Victory</h1>
+                <div class="nav-toggle"></div>
+                <button id="toggle-btn" class="toggle-menu">
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="row">
+                    <ul id="nav-links" class="nav-links is-active col-xs-12">
+                        <li class="col-xs-12"><a href="index.html">HOME</a></li>
+                        <li class="col-xs-12"><a href=" menu.html">OUR MENUS</a></li>
+                        <li class="col-xs-12"><a href=" blog.html">BLOG ENTRIES</a></li>
+                        <li class="col-xs-12"><a href=" contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!-- end header -->
+    <section class="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xs-12">
+                    <div class="section-heading">
+                        <h2>MESSAGE</h2>
+                    </div>
+                    <form class="contact-form">
+                        <div class="row">
+                            <div class="col-lg-6 col-xs-12">
+                                <fieldset>
+                                    <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required>
+                                </fieldset>
+                                <fieldset>
+                                    <input name="email" type="text" class="form-control" id="email"
+                                        placeholder="Your email..." required>
+                                </fieldset>
+                                <fieldset>
+                                    <input name="phone" type="text" class="form-control" id="phone" placeholder="Your phone..." required>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-6 col-xs-12">
+                                <fieldset>
+                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                                </fieldset>
+                                <fieldset>
+                                    <button type="submit" id="form-submit" class="btn">SEND MESSAGE</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <h2>Contact Info</h2>
+                        <p>Pellentesque nec orci in erat venenatis viverra. Vivamus in lorem et leo feugiat ullamcorper. Donec volutpat fermentum erat non aliquet. Cras fermentum, risus a blandit sodales, erat turpis eleifend lacus, venenatis mollis leo lorem vel eros. Quisque et sem tempus, feugiat urna iaculis, tempor metus.<br><br><span>30 Raffles Ave, <br>Singapore 039803</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="map">
+         <div class="container">
+             <div class="row">
+                 <div class="col-lg-12 col-xs-12">
+                     <div id="map">
+                         <iframe
+                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25636.12443896986!2d59.149445871246634!3d36.56579214213809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f6c4e79afe9e863%3A0xd876c1419281f69c!2z2K_YsduM2KfahtmHINqv2YTYqNmH2KfYsQ!5e0!3m2!1sen!2s!4v1633975840871!5m2!1sen!2s"
+                             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section>
+     <!-- start footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-lg-4">
+                    <p>Copyright © 2020 Victory Template</p>
+                </div>
+                <div class="col-xs-12 col-lg-4">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fas fa-rss"></i></a></li>
+                        <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-lg-4">
+                    <p>Design: TemplateMo</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <script>
+        const menu_btn = document.getElementById('toggle-btn');
+        const menu_collapse = document.getElementById('nav-links');
+
+        menu_btn.addEventListener('click', function () {
+            menu_collapse.classList.toggle('is-active');
+        });
+    </script>
+    
+</body>
+
+</html>
