@@ -11,7 +11,7 @@
         itemsMobile : false // itemsMobile disabled - inherit from
         });
     });
-
+    
  $(document).ready(function() {
 
     $("#lunch-slider").owlCarousel({
